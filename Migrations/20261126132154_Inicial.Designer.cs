@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace LoginApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20261124155106_Inicial")]
+    [Migration("20261126132154_Inicial")]
     partial class Inicial
     {
         /// <inheritdoc />
@@ -33,7 +33,7 @@ namespace LoginApi.Migrations
                         .IsRequired()
                         .HasColumnType("TEXT");
 
-                    b.Property<string>("PassowordHash")
+                    b.Property<string>("PasswordHash")
                         .IsRequired()
                         .HasColumnType("TEXT");
 
